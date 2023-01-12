@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
 import { Outlet } from 'react-router-dom'
-import { Navbar } from '../../menus/navbar'
+import { Navbar } from '../../../navigation/menus/navbar'
 
 interface LayoutProps {
   children?: ReactNode
