@@ -4,6 +4,8 @@ import { HomePage } from '../../pages/home'
 import { LayoutPage } from '../../pages/@shared/layout'
 import { ProgressPage } from '../../pages/progress'
 import { SearchPage } from '../../pages/search'
+import { RankingPage } from '../../pages/rankings'
+import { reviewedBooks } from '../../components/bookStorage/jrm-test-book-data'
 
 export const Router = () => {
   const router = createBrowserRouter([
@@ -23,6 +25,10 @@ export const Router = () => {
         {
           path: 'progress',
           element: <ProgressPage />,
+        },
+        {
+          path: 'rankings',
+          element: <RankingPage reviewedBooks={reviewedBooks} />,
         },
       ],
     },

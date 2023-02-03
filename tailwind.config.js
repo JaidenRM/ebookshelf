@@ -12,8 +12,21 @@ module.exports = {
       colors: {
         primaryFg: '#F2C0A2',
         primaryBg: '#476686',
+        primaryFgLightest: '#F2C0A222',
+        primaryBgLightest: '#47668622',
+      },
+      flex: {
+        2: '2 2 0%',
+        4: '4 4 0%',
+        8: '8 8 0%',
+      },
+      boxShadow: ({ theme }) => ({
+        menu: `0 0.25rem 0.5rem 0 ${theme('colors.primaryFg', '#F2C0A2')}`,
+      }),
+      borderColor: {
+        DEFAULT: 'none',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 }

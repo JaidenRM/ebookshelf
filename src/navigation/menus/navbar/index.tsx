@@ -20,7 +20,7 @@ export const Navbar = ({ menuItems }: NavbarProps) => {
   const isMobile = useMediaQuery('(max-width: 639px)')
 
   return (
-    <div className="text-3xl sm:text-xl">
+    <div className="text-3xl sm:text-xl shadow-menu">
       {isMobile && <MobileMenu menuItems={menuItems} />}
       {!isMobile && <DesktopMenu menuItems={menuItems} />}
     </div>

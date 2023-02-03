@@ -77,7 +77,7 @@ export const Book = ({ title, coverUrl, onClick, isActive }: BookProps) => {
         </div>
         <div
           className={clsx(
-            'relative z-10 h-72 shrink-0 origin-left overflow-hidden border-gray-900 brightness-[0.80] contrast-[2.00]',
+            'relative z-10 h-80 shrink-0 origin-left overflow-hidden border-gray-900 brightness-[0.80] contrast-[2.00]',
             animationStyle
           )}
           style={{
